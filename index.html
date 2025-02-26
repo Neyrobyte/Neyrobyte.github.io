@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Sega!</title>
+    <title>Цветной шар</title>
     <style>
         body {
             display: flex;
@@ -11,18 +11,19 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #67f0f0;
-            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
         }
 
-        h1 {
-            font-size: 3rem;
-            color: #222;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        .ball {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
 <body>
-    <h1>Hello, Sega!</h1>
+    <div class="ball"></div>
 </body>
 </html>
