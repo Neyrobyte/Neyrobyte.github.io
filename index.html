@@ -1,72 +1,48 @@
-<!--
+<!--    -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flag of a great power</title>
+    <title>Пример использования div</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+        .container {
+            width: 80%;
+            margin: 10 auto;
+            padding: 20px;
             background-color: #f0f0f0;
+            border: 1px solid #ccc;
         }
-
-        .ball {
-            width: 200px;
-            height: 200px;
-            background-color: red;
-            border-radius: 50%;
-            box-shadow: 0 0 20px rgba(1, 0, 0, 0.5);
+        .header {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
         }
-    </style>
-</head>
-<body>
-    <div class="ball"></div>
-</body>
-</html>
--->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>?</title>
-    <style>
-        .custom-italic {
-            font-style: italic;
-            color: black; /* Добавляем цвет */
-            font-weight: bold; /* Делаем текст жирным */
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #0962;
-            font-family: Arial, sans-serif;
-        }
-
-        h2 {
-            font-size: 1rem;
-            height: 90vh;
-            color: #122;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        .content {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    
-    <h2>
-        <p>
-            <img src="dimon.jpg" alt=" " width="300">
-        </p>
-        <p>
-            <span class="custom-italic">«Пока нормисы жалуются на жизнь, меня ебет отчим»</span>
-    </h2>
+    <div class="container">
+        <div class="header">
+            <h1><img src="dimon.jpg" alt=" " width="260"></h1>
+        </div>
+        <div class="content">
+            <p>Это основной контент страницы. Здесь может быть текст, изображения, ссылки и другие элементы.</p>
+            <p>Еще один абзац текста.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Заголовок страницы</h1>
+        </div>
+        <div class="content">
+            <p>Это основной контент страницы. Здесь может быть текст, изображения, ссылки и другие элементы.</p>
+            <p>Еще один абзац текста.</p>
+        </div>
+    </div>
 </body>
 </html>
