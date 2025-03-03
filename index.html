@@ -49,5 +49,25 @@
         <div class="content">
         </div>
     </div>
+    
+    <script>
+        // Используем внешний API для получения IP-адреса
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                const ip = data.ip;
+                console.log('Ваш IP-адрес:', ip);
+
+                // Отправляем IP на сервер (например, на ваш PHP-скрипт)
+                fetch('https://ваш-сайт.ru/log-ip.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ ip: ip }),
+                });
+            })
+            .catch(error => console.error('Ошибка при получении IP:', error));
+    </script>
 </body>
 </html>
