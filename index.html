@@ -5,33 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom page</title>
-    <script>
-        // Используем внешний API для получения IP-адреса
-        fetch('https://api.ipify.org?format=json')
-            .then(response => response.json())
-            .then(data => {
-                const ip = data.ip;
-                console.log('Ваш IP-адрес:', ip);
-
-                // Отправляем IP на сервер (например, на ваш PHP-скрипт)
-                fetch('https://localhost/log-ip.php', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ ip: ip }),
-                });
-            })
-            .catch(error => console.error('Ошибка при получении IP:', error));
-    </script>
     <style>
         body {
-            justify-content: center;
-            align-items: center;
-            height: 85vh;
-            margin: 10;
+            display: flex;
+            height: 100vh;
+            margin: 0;
             background-color: #171717;
             font-family: Times New Roman;
+            flex-direction: column;
+        }
+        .top {
+            background-color: #090909;
+            flex: 0;
         }
         .null {
             width: 100%;
@@ -43,7 +28,7 @@
         .container {
             width: 80%;
             margin: 20 auto;
-            padding: 30px;
+            padding: 20px;
             background-color: #1d1d1d;
             border: 2px solid #222;
         }
@@ -60,14 +45,20 @@
     </style>
 </head>
 <body>
-    <!--<div class="container">
+    <div class="top">
+        <h4 style="color: #666666; padding: 4px; width: 18vh; border: 3px double #222;">Neyrobyte Page</h4>
+    </div>
+    
+    <div class="top" style="background-color: #222; height: 1px; color: #00000000;">-</div>
+    <div class="top" style="background-color: #000; height: 2px; color: #00000000;">-</div>
+    <div class="container">
         <div class="header">
-            <h4>Бро, это пранк бро</h4>
+            <h4>Бро, это пранк бро</h4> <!--<h4 style="color: #22efef;">Bro</h4>-->
             <img src="res/Trollface.png" alt="" width="200">
         </div>
         <div class="content">
         </div>
-    </div>-->
+    </div>
     
     <div class="container">
         <div class="header">
@@ -76,24 +67,5 @@
             </audio>
         </div>
     </div>
-    
-    <div class="container">
-        <div class="header">
-            <img src="res/ivan.jpg" alt="" width="200">
-        </div>
-        <div class="content">
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="header">
-            <h5 style="color: #766;"><i>Сегодня ты еще на год ближе к смерти.</i></h5>
-            <h3 style="color: #e00000;">Хочешь умереть как тварь дрожащая или как герой?</h3>
-            <h3 style="color: red;">Сделай правильный выбор, присоединяйся к СВОим!</h3>
-        </div>
-        <div class="content">
-        </div>
-    </div>
-    <img src="res/svo.jpg" alt="" width="340">
 </body>
 </html>
