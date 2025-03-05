@@ -1,54 +1,44 @@
+<!--    -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Анимационный Сайт</title>
+    <title>Custom page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #171717;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        .text-with-outline {
-            text-shadow: 
-                -1px -1px 0 #000,  
-                 1px -1px 0 #000,
-                -1px  1px 0 #000,
-                 1px  1px 0 #000;
-}
+            justify-content: center;
+            align-items: center;
+            height: 85vh;
+            margin: 4%;
+            /*padding: 10;*/
+            background-color: #151515;
+            font-family: Arial;
         }
-        #animation {
-            width: 100vw;
-            height: 100vh;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-image: url('animation_frame_1.png');
-            background-size: cover;
-            animation: playAnimation 1s steps(9) infinite;
-        }
-        @keyframes playAnimation {
-            from { background-image: url('animation_frame_1.png'); }
-            to { background-image: url('animation_frame_10.png'); }
-        }
-        #content {
-            position: relative;
-            z-index: 1;
-            padding: 20px;
+        .container {
+            width: 80%;
+            padding: 10%;
             background-color: #1d1d1d;
-            color: #00bb00;
-            border-radius: 10px;
-            max-width: 600px;
-            margin: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border: 3px double #333;
+            border: 2px double #333;
         }
-        h1 {
-            text-align: center;
+        .header {
+            text-align: left;
+            font-size: 18px;
+            color: #f01;
+            text-shadow:
+                -0.7px   -0.7px 0 #000,
+                0.7px    -0.7px 0 #000,
+                -0.7px   0.7px  0 #000,
+                0.7px    0.7px  0 #000,
+                0px      -0.7px 0 #000,
+                -0.7px   0px    0 #000,
+                0.7px    0px    0 #000,
+                0px      0.7px  0 #000;
+        }
+        .content {
+            margin-top: 20px;
+            font-size: 15px;
+            color: #f0f;
             text-shadow:
                 -1px -1px 0 #000,
                  1px -1px 0 #000,
@@ -58,53 +48,72 @@
                 -1px  0px 0 #000,
                  1px  0px 0 #000,
                  0px  1px 0 #000;
-                /*text-shadow: -1px -1px 0 #00ff00, -1px 0px 0 #00ff00, 0px -1px 0 #00ff00, 0px -1px 0 #00ff00, 1px 1px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000;*/
         }
-        p {
-            text-shadow: 
-                -1px -1px 0 #000,
-                 1px -1px 0 #000,
-                -1px  1px 0 #000,
-                 1px  1px 0 #000,
-                 0px -1px 0 #000,
-                -1px  0px 0 #000,
-                 1px  0px 0 #000,
-                 0px  1px 0 #000;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        input, button {
-            padding: 10px;
-            border: 1px solid #666;
-            border-radius: 5px;
-            background-color: #333;
+        .yellow {
+            color: #c49d00;
+            font-weight: bold;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
-
-    <div id="animation"></div>
-
-    <div id="content">
-        <h1>Регистрация</h1>
-        <p class="text-with-outline">хуевый текст</p>
-        <p>Здесь вы найдете полезную информацию и сможете заполнить формы для обратной связи.</p>
+    <div class="container">
+        <div>
+            <img src="res/pepe.png" alt="" width="80" style="margin-left: 187px; margin-top: -10px; margin-bottom: -100px;"/>
+        </div>
+        <div class="header">
+            <h3>Ой, что это?!</h3>
+        </div>
+        <div class="content">
+            <p>Здесь расположено неофициальное представительство <b class="yellow">НАХУЙ</b> в интернете.</p>
+        </div>
         
-        <form>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <button type="submit" style="color: #000 ;">Отправить</button>
-        </form>
         
-        <p style="margin-top: 20px;">© 2023 Neyrobyte inc. Все права защищены.</p>
+        <div class="header">
+            <h3>Что же это значит?!</h3>
+        </div>
+        <div class="content">
+            <p>Если вы оказались на этой странице, это означает только одно: <b class="yellow">вас послали нахуй.</b> Грубо, но элегантно: прислав эту ссылку.</p>
+        </div>
+        
+        
+        <div class="header">
+            <h3>Как же такое могло случиться со мной?!</h3>
+        </div>
+        <div class="content">
+            <p>Вот самые распространенные причины:</p>
+            <ul>
+                <li>Вы утомили собеседника 
+                <b class="yellow">глупыми вопросами</b>, просьбами или советами.</li>
+                <br><li>Вы обидели собеседника <b class="yellow">неосторожным высказыванием</b>: задели его религиозные, политические, музыкальные и прочие взгляды и вкусы, либо иным образом <b class="yellow">вторглись в его внутренний мир</b> и подвергли критике то, чем он дорожит.</li>
+                <br><li>Вам намекают о том, что не вернут долг, не заплатят за работу, <b class="yellow">отказывают в <b class="yellow" style="color: #ffffff22;">гомо-</b>сексуальной близости</b>.</li>
+                <br><li><b class="yellow">Вы были недостаточно вежливы</b></li>
+                <br><li><b class="yellow">С вами просто не хотят общаться</b>. Такое тоже бывает.</li>
+            </ul>
+            <br>
+            <p>Есть конечно вариант, что вы попали на эту страницу случайно, найдя ее, например, в поисковике.</p>
+            <p>Задумайтесь: быть может, <b class="yellow">вам надо серьезно пересмотреть свои взгляды на жизнь</b>, если даже поисковики стали по своей инициативе предлагать вам <b class="yellow">пойти нахуй</b>.</p>
+            
+        </div>
+
+
+        <div class="header">
+            <h3>Что же мне теперь делать?!</h3>
+        </div>
+        <div class="content">
+            <p>Советуем:</p>
+            <ul>
+                <li>Пересмотреть свое отношение к этому человеку.</li>
+                <div>
+                    <img src="res/dimon_mini.png" alt="" width="30" style="margin-left: -56px; margin-top: 5px; margin-bottom: -50px;"/>
+                </div>
+                <li>Всерьез на него обидеться.</li>
+                <br><li>Поставить закладку, и в следующий раз послать ссылку тому, кого хотите послать нахуй.</li>
+            </ul>
+        </div>
+        
+        
     </div>
-
+</div>
 </body>
 </html>
