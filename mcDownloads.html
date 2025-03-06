@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC download</title>
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 2vh;
+            background-color: #151515;
+            font-family: Arial;
+        }
+        .container {
+            width: 80%;
+            padding: 10%;
+            background-color: #1d1d1d;
+            border: 2px double #333;
+        }
+        .header {
+            text-align: left;
+            font-size: 18px;
+            margin-top: -2vh;
+            color: #f01;
+            text-shadow:
+                -0.7px -0.7px 0 #000,
+                 0.7px -0.7px 0 #000,
+                -0.7px  0.7px 0 #000,
+                 0.7px  0.7px 0 #000,
+                   0px -0.7px 0 #000,
+                -0.7px    0px 0 #000,
+                 0.7px    0px 0 #000,
+                   0px  0.7px 0 #000;
+        }
+        .content {
+            margin-top: 20px;
+            font-size: 15px;
+            color: #f0f;
+            text-shadow:
+                -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                -1px  1px 0 #000,
+                 1px  1px 0 #000,
+                 0px -1px 0 #000,
+                -1px  0px 0 #000,
+                 1px  0px 0 #000,
+                 0px  1px 0 #000;
+        }
+        .yellow {
+            font-size: 15px;
+            color: #c49d00;
+            font-weight: bold;
+            font-style: italic;
+            text-shadow:
+                -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                -1px  1px 0 #000,
+                 1px  1px 0 #000,
+                 0px -1px 0 #000,
+                -1px  0px 0 #000,
+                 1px  0px 0 #000,
+                 0px  1px 0 #000;
+        }
+        .button {
+            width: 40%;
+            height: 1px; /* Увеличиваем высоту кнопки */
+            padding: 5%;
+            margin-left: 0vh;
+            background-color: #00bb00;
+            border: 4px double #010;
+            border-radius: 10vh;
+            display: flex; /* Добавляем flex */
+            align-items: center; /* Выравниваем по вертикали */
+            justify-content: center; /* Выравниваем по горизонтали */
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="header">Ссылки для скачивания</h3>
+        <p class="content">Архив с модами:</p>
+        <a href="./files/mods.zip" download=""><div class="button">mods.zip</div></a>
+        
+        <p class="content">Миникарта мод. Exactly supported version – 6.0.0-beta.18:</p>
+        <a href="./files/journeymap-fabric-1.21-6.0.0-beta.18.jar" download=""><div class="button">journeymap.jar</div></a>
+        
+        <p class="content">Миникарта мод. Last version – 6.0.0-beta.27:</p>
+        <a href="./files/journeymap-fabric-1.21-6.0.0-beta.27.jar" download=""><div class="button">journeymap.jar</div></a>
+
+        <p class="content">Файл миникарты:</p>
+        <a href="./files/pepe.png" download=""><div class="button">Jmap.zip</div></a>
+        
+        <p class="content">fabric-installer:</p>
+        <a href="./files/pepe.png" download=""><div class="button">download</div></a>
+        
+        <p class="content">fabric-installer. Exactly supported version:</p>
+        <a href="./files/pepe.png" download=""><div class="button">download</div></a>
+        
+        <br><p class="yellow">/login -</p>
+    </div>
+</body>
+</html>
