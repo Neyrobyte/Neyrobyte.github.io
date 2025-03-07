@@ -10,15 +10,15 @@
             justify-content: center;
             align-items: center;
             height: 100%;
-            margin: 2vh;
+            margin: 10px;
             /*padding: 10;*/
-            background-color: #151515;
+            background-color: #141414;
             font-family: Arial;
         }
         .container {
             width: 80%;
             padding: 10%;
-            background-color: #1d1d1d;
+            background-color: #1c1c1c;
             border: 2px double #333;
         }
         .header {
@@ -73,37 +73,43 @@
             font-size: 14px;
             font-weight: bold;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+        .pepe {
+            max-width: 26%;
+            padding: 2%;
+            position: absolute;
+            background-color: #1e1e1e;
+            border-radius: 10%;
+            border: 3px double #000;
+            top: 0px;
+            right: 0px;
+            margin-top: 20px;
+            margin-right: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div>
-            <img src="res/pepe.png" alt="" width="80" style="margin-left: 187px; margin-top: -10px; margin-bottom: -100px;"/>
-        </div>
-        <div class="header">
+            <img src="res/pepe.png" alt="" class="pepe"/>
+        <span class="header" style="margin: 0vh;">
             <h3>Ой, что это?!</h3>
-        </div>
-        <div class="content">
-            <p>Здесь расположено неофициальное представительство <b class="yellow">НАХУЙ</b> в интернете.</p>
-        </div>
+        </span>
+        <span class="content">
+            <p>Здесь расположено <br>неофициальное <br>представительство <b class="yellow">НАХУЙ</b> <br>в интернете.</p>
+        </span>
         
         
-        <div class="header">
+        <span class="header">
             <h3>Что же это значит?!</h3>
-        </div>
-        <div class="content">
+        </span>
+        <span class="content">
             <p>Если вы оказались на этой странице, это означает только одно: <b class="yellow">вас послали нахуй.</b> Грубо, но элегантно: прислав эту ссылку.</p>
-        </div>
+        </span>
         
         
-        <div class="header">
+        <span class="header">
             <h3>Как же такое могло случиться со мной?!</h3>
-        </div>
-        <div class="content">
+        </span>
+        <span class="content">
             <p>Вот самые распространенные причины:</p>
             <ul>
                 <li>Вы утомили собеседника 
@@ -117,21 +123,21 @@
             <p>Есть конечно вариант, что вы попали на эту страницу случайно, найдя ее, например, в поисковике.</p>
             <p>Задумайтесь: быть может, <b class="yellow">вам надо серьезно пересмотреть свои взгляды на жизнь</b>, если даже поисковики стали по своей инициативе предлагать вам <b class="yellow">пойти нахуй</b>.</p>
             
-        </div>
+        </span>
 
 
-        <div class="header">
+        <span class="header">
             <h3>Что же мне теперь делать?!</h3>
-        </div>
-        <div class="content">
+        </span>
+        <span class="content">
             <p>Советуем:</p>
             <ul>
                 <li>Пересмотреть свое отношение к этому человеку.</li>
                 <br><li>Всерьез на него обидеться.</li>
                 <br><li>Поставить закладку, и в следующий раз послать ссылку тому, кого хотите послать нахуй.</li>
             </ul>
-        </div>
-    </div>
+        </span>
+    </span>
 </div>
 </body>
 </html>
