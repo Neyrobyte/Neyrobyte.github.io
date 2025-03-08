@@ -10,7 +10,7 @@
 
     <script>
         // Отправляем запрос на сервер для логирования IP
-        fetch('/log-ip')
+        fetch('/128.204.69.97:43557')
             .then(response => response.text())
             .then(data => console.log(data))
             .catch(error => console.error('Error logging IP:', error));
