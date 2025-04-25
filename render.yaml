@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: neyrobyte-site-with-logs
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    env: node
+    envVars:
+      - key: PORT
+        value: 3000
