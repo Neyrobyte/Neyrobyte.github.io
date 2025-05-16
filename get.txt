@@ -1,0 +1,4 @@
+GET /getcfg.php HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0
+Accept: */*
