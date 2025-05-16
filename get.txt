@@ -1,1 +1,0 @@
-curl -X GET http://192.168.0.1/getcfg.php -H "Host: 192.168.0.1" -H "User-Agent: Mozilla/5.0" -H "Accept: */*"
